@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <h2>Somar:</h2>
+        <label for="nota1">1° nota</label>
+        <input type="text" id="inota1" name="nota1">
+        <label for="nota2">2° nota</label>
+        <input type="text" id="inota2" name="nota2">
+        <br>
+        <button onclick="somar()">somar</button>
+        <button onclick="subtrair()">Subtrair</button>
+        <button onclick="dividir()">Subtrair</button>
+        <button onclick="multiplicar()">Subtrair</button>
+
+        <p id="iparagrafo">...</p>
+
+    </div>
+    <script>
+        function somar() {
+            let nota1 = parseFloat($("#inota1").val());
+            let nota2 = parseFloat($("#inota2").val());
+            let resultado = nota1 + nota2;
+            $("#iparagrafo").html("o resultado da soma é: " + resultado);
+        }
+
+        function dividir() {
+            let nota1 = parseFloat($("#inota1").val());
+            let nota2 = parseFloat($("#inota2").val());
+            let resultado = nota1 / nota2;
+            $("#iparagrafo").html("o resultado da divisão é: " + resultado);
+        }
+
+        function somar() {
+            let nota1 = parseFloat($("#inota1").val());
+            let nota2 = parseFloat($("#inota2").val());
+            let resultado = nota1 * nota2;
+            $("#iparagrafo").html("o resultado da divisão é: " + resultado);
+        }
+    </script>
+</body>
+
+</html>
