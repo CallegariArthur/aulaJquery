@@ -18,8 +18,8 @@
         <br>
         <button onclick="somar()">somar</button>
         <button onclick="subtrair()">Subtrair</button>
-        <button onclick="dividir()">Subtrair</button>
-        <button onclick="multiplicar()">Subtrair</button>
+        <button onclick="dividir()">dividir</button>
+        <button onclick="multiplicar()">multiplicar</button>
 
         <p id="iparagrafo">...</p>
 
@@ -31,6 +31,12 @@
             let resultado = nota1 + nota2;
             $("#iparagrafo").html("o resultado da soma é: " + resultado);
         }
+        function subtrair() {
+            let nota1 = parseFloat($("#inota1").val());
+            let nota2 = parseFloat($("#inota2").val());
+            let resultado = nota1 - nota2;
+            $("#iparagrafo").html("o resultado da soma é: " + resultado);
+        }
 
         function dividir() {
             let nota1 = parseFloat($("#inota1").val());
@@ -39,7 +45,7 @@
             $("#iparagrafo").html("o resultado da divisão é: " + resultado);
         }
 
-        function somar() {
+        function multiplicar() {
             let nota1 = parseFloat($("#inota1").val());
             let nota2 = parseFloat($("#inota2").val());
             let resultado = nota1 * nota2;
